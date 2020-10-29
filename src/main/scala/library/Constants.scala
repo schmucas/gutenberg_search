@@ -1,6 +1,6 @@
 package library
 
 object Constants {
-  val dataLakePath = "/Users/lucazwicky/Desktop/gutenberg/data-lake"
-  val searchWordReadPath = "/Users/lucazwicky/Desktop/gutenberg/raw-data"
+  val dataLakePath = "this is a path"
+  val searchWordReadPath = "this is another path"
 }
