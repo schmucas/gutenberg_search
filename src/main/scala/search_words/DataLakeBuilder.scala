@@ -46,8 +46,8 @@ object DataLakeBuilder {
 
   def main(args: Array[String]): Unit = {
 
-    val evn = Try(args(2)).toOption match {
-      case Some(s) => args(2)
+    val evn = Try(args(0)).toOption match {
+      case Some(s) => args(0)
       case None => "dev"
     }
     val config = RunConfig.appconfig(evn)
