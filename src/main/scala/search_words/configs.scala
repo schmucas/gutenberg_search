@@ -16,12 +16,20 @@ object SearchWordsConfigDev extends SearchWordsConfig ()
 
 object SearchWordsConfigStaging extends SearchWordsConfig (
   configs = Map(
+    "read_path" -> Constants.searchWordReadPath,
+    "data_lake_path" -> Constants.dataLakePath,
+    "event" -> "gutenberg",
+    "partition_column" -> "filename",
     "env" -> "staging"
   )
 )
 
 object SearchWordsConfigProd extends SearchWordsConfig (
   configs = Map(
+    "read_path" -> Constants.searchWordReadPath,
+    "data_lake_path" -> Constants.dataLakePath,
+    "event" -> "gutenberg",
+    "partition_column" -> "filename",
     "env" -> "prod"
   )
 )
