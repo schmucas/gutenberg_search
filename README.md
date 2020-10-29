@@ -17,7 +17,7 @@ Before running application, two variables have to be defined in library.Constant
 ### Build Jar
 run
 ```shell script
-sbt compile
+sbt package
 ```
 
 Once compiled, save jar path in text editor (can be found in target folder)
