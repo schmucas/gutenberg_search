@@ -53,3 +53,7 @@ or
 search_words.SearchWords.main(Array("fish","10","dev"))
 ```
 (the word search is not case sensitive)
+
+## Notes
+
+In order to scale up and run on a distributed system jar could be installed on AWS EMR or Databricks. I recommend using EMR due to the price advantage (Databricks is double the cost) and use Databricks for development and debugging.
