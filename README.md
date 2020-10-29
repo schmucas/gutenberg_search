@@ -1,20 +1,20 @@
-#PROJECT GUTENBERG
+# PROJECT GUTENBERG
 
-##Setup
+## Setup
 
-###Prerequisites
+### Prerequisites
 Install Scala and Spark:
 https://medium.com/beeranddiapers/installing-apache-spark-on-mac-os-ce416007d79f
 
 The dependencies are set up to run with Scala 2.12 and Spark 3.0.1.
 If you have a different version installed make sure to update build.sbt
 
-###Set up configurations
+### Set up configurations
 Before running application, two variables have to be defined in library.Constants
 * "searchWordReadPath" => Define read path for source .txt files (code will only accept .txt files)
 * "dataLakePath" => Define path for data lake (Code will write parquet files)
 
-###Build Jar
+### Build Jar
 run
 ```shell script
 sbt compile
@@ -22,7 +22,7 @@ sbt compile
 
 Once compiled, save jar path in text editor (can be found in target folder)
 
-###Run application
+### Run application
 open terminal and start spark
 ```shell script
 spark-shell
