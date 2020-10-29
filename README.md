@@ -43,6 +43,8 @@ now, let's build the data lake from the raw .txt files
 ```shell script
 search_words.DataLakeBuilder.main(Array("dev"))
 ```
+(this might take a while depending on the amount of files read)
+
 once data lake is built. We can perform the searches
 (again, 3rd argument is optional)
 ```shell script
