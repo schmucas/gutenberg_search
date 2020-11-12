@@ -1,4 +1,5 @@
 # PROJECT GUTENBERG
+Reads books from project gutenberg and builds a data lake so books can be searched for keywords
 
 ## Setup
 
