@@ -46,11 +46,11 @@ object DataLakeBuilder {
 
   def main(args: Array[String]): Unit = {
 
-    val evn = Try(args(0)).toOption match {
+    val env = Try(args(0)).toOption match {
       case Some(s) => args(0)
       case None => "dev"
     }
-    val config = RunConfig.appconfig(evn)
+    val config = RunConfig.appconfig(env)
 
     buildDataLake(config)
   }
